@@ -16,11 +16,10 @@ data["API"] = {"HTTPHeaders": {
     "POST"
   ],
  "Access-Control-Allow-Origin": [
-	"*"
+        "*"
   ]
   }
 }
-data["Bootstrap"] = ["/ip4/"+MY_IP+"/tcp/4001/ipfs/" + peer]
 f = open("data/ipfs0/config","w+")
 f.write(json.dumps(data, sort_keys=True, indent=4))
 f.close()
